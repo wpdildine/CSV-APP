@@ -28,9 +28,16 @@
 
   <div class="row">
     <div class="col-xs-12">
-      Regional Drop Down:
-      <select name="address" id="country">
+      <h2>Regional Drop Down:</h2>
+      <select name="Country" id="country">
+        <option disabled selected value> -- select an option -- </option>
       </select>
+      <div id="hide" style="display:none;">
+        <h2>State Selection:</h2>
+        <select name="state" id="state" >
+          <option disabled selected value> -- select an option -- </option>
+        </select>
+      </div>
     </div>
   </div>
   <div class="row">
@@ -46,12 +53,6 @@
           </thead>
           <tbody id="csv-table">
           </tbody>
-          <tfoot>
-          <tr>
-            <td colspan="5" class="text-center">Data retrieved from provided Excel
-            </td>
-          </tr>
-          </tfoot>
         </table>
       </div><!--end of .table-responsive-->
     </div>
